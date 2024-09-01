@@ -19,7 +19,7 @@ function Dashboard() {
   return (
     <div>
       <Header insideDashBoard/>
-      <Row>
+      <Row style={{marginBottom:'30vh'}}>
         <h2 className='mt-4 mx-5'>Welcome <span className='text-success fw-bolder'> {userName}</span></h2>
 
         {/* my projects */}
