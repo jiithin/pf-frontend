@@ -8,7 +8,7 @@ import { Link , useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getHomeProjectAPI } from '../services/allAPI'
-
+import Header from '../Components/Header'
 
 
 
@@ -67,7 +67,7 @@ function Home() {
 
   return (
     <>
-    
+    <Header/>
     {/* <div style={{height:'90vh'}} className=' d-flexcontainer-fluid rorunded bg-white mt-5'>
     <Row className='ms-auto align-items-center p-5 '>
     <Col sm={12} md={6}>
