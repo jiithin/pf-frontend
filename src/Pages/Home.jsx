@@ -135,7 +135,7 @@ function Home() {
            <Row className='mt-3'>
            {allprojects.length>0?
             allprojects.map((project,index)=>(
-               <Col key={index} sm={12} md={6} lg={4} >
+               <Col key={index} sm={12} md={6} lg={3} >
                 <ProjectCard project={project}/>
                 </Col>
              )):null
