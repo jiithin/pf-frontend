@@ -77,7 +77,7 @@ function Footer() {
 
       <MDBCol md="4" lg="4" xl="5" className='mx-auto mb-md-0 mb-4'>
         <h5 className='text-uppercase fw-bold mb-4'>Connect with Us</h5>
-        <form action=''>
+{/*         <form action=''>
     <MDBRow>
       
 
@@ -89,7 +89,7 @@ function Footer() {
         <button className='btn btn-primary'>Subscribe</button>
       </MDBCol>
     </MDBRow>
-  </form>
+  </form> */}
 
 
   
