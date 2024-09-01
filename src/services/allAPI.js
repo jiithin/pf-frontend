@@ -19,7 +19,7 @@ export const addProjectAPI = async(reqBody,reqHeader)=>{
 }
 
 
-//getHomeProject api (only three will show up becoz we put a limit)
+//getHomeProject api (only three will show up becoz we put a limit in project controller)
 export const getHomeProjectAPI = async()=>{
     return await commonAPI('GET',`${SERVER_URL}/homeprojects`,"","")
 }
