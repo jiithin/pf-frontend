@@ -1,6 +1,7 @@
 import React, { useEffect , useState } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import titleimage from '../assets/images/web4.gif'
+import titleimage1 from '../assets/images/projects.svg'
 import ProjectCard from '../Components/ProjectCard'
 import { Link , useNavigate } from 'react-router-dom'
 
@@ -8,10 +9,18 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getHomeProjectAPI } from '../services/allAPI'
 
-//onscroll aniations
-import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.compat.css"
 
+
+
+import {
+  HomeContainer,
+  HomeLeft,
+  HomeRight,
+  Image,
+  HomeWrapper,
+  HomeFirst,
+} from "./HomeElements";
+import { Fade, Slide } from 'react-awesome-reveal'
 
 
 
@@ -59,7 +68,7 @@ function Home() {
   return (
     <>
     
-    <div style={{height:'90vh'}} className=' d-flexcontainer-fluid rorunded bg-white mt-5'>
+    {/* <div style={{height:'90vh'}} className=' d-flexcontainer-fluid rorunded bg-white mt-5'>
     <Row className='ms-auto align-items-center p-5 '>
     <Col sm={12} md={6}>
 
@@ -79,7 +88,40 @@ function Home() {
       </Col>
 
      </Row>
-    </div>
+    </div> */}
+
+    {/* body */}
+    <HomeContainer id="home">
+        <HomeWrapper>
+        <HomeFirst>
+            <Slide>
+              <Image
+                src={titleimage1} alt="title image1"
+              />
+            </Slide>
+          </HomeFirst>
+          <HomeLeft >
+            <Slide >
+            <h1 style={{fontSize:'55px'}} className='align-items-left fw-bold'>Project Fair</h1>
+            <p className='text-dark'>This platform allows you to showcase your web projects. It has a dedicated section for Display websites and Project page websites. These sections showcase websites created by the web-dev community and professional designers. You can get inspired and start planning your perfect web design today!</p>
+            {isLoggedIn? <Link to={'/dashboard'} className='btn btn-success shadow'>Dashboard</Link>:
+             <Link to={'/login'} className='btn btn-primary me-3'>Explore</Link>
+            }
+
+
+            </Slide>
+
+          </HomeLeft>
+          <HomeRight>
+            <Fade delay={500} damping={0.1}>
+              <Image
+                src={titleimage} alt="title image" 
+              />
+            </Fade>
+          </HomeRight>
+        </HomeWrapper>
+        
+      </HomeContainer>
     
 
 
@@ -89,7 +131,7 @@ function Home() {
     <div className="all-projects mt-5">
       <h1 className='text-primary fw-bolder text-center'>Explore Your Projects</h1>
 
-      <ScrollAnimation animateIn='fadeInRight'>
+      <Fade direction='left'>
            <Row className='mt-3'>
            {allprojects.length>0?
             allprojects.map((project,index)=>(
@@ -109,7 +151,7 @@ function Home() {
              </Col> */}
         
              </Row>
-      </ScrollAnimation>
+      </Fade>
   
       
       <div style={{textAlign:'center', paddingBottom:'50px'}}>
