@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <>
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted fixed-relative'>
+    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted '>
 
 
 
