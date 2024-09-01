@@ -24,7 +24,7 @@ export const HomeContainer = styled.div`
     max-width: 1000px;
   }
   @media screen and (max-width: 992px) {
-      padding-bottom: 12rem;
+      padding-bottom: 5rem;
   }
 `;
 
@@ -88,7 +88,7 @@ export const HomeLeft = styled.div`
     @media screen and (max-width: 992px) {
     text-align: left;
     align-items: left;
-    margin-bottom: 5rem;
+
 `;
 
 //for big screens 
