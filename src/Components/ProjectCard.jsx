@@ -19,7 +19,7 @@ function ProjectCard({project}) {
     const handleShow = () => setShow(true);
   return (
     <>
-    <Card className='mb-4 mx-auto shadow' style={{ width: '18rem' }}>
+    <Card className='mb-4 mx-auto shadow' style={{ width: '18rem', marginTop:'3rem' }}>
       <Card.Img variant="top" src={`${SERVER_URL}/uploads/${project?.projectImage}`} onClick={handleShow} />
       <Card.Body>
         <Card.Title>{project?.title}</Card.Title>
