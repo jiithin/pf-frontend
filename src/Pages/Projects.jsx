@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+ import React, { useEffect, useState } from 'react'
 import Header from '../Components/Header'
 import ProjectCard from '../Components/ProjectCard'
 import { Row,Col } from 'react-bootstrap'
@@ -51,7 +51,7 @@ useEffect (()=>{
         </div>
       </div>
       
-      <Row className='mt-4 container-fluid p-3 ms-auto'>
+      <Row className='mt-4 container-fluid p-3 ms-auto' style={{marginBottom:'35vh'}}>
       
         {allProjects.length>0?
         allProjects.map((project,index)=>(
