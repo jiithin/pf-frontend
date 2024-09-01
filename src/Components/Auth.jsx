@@ -97,7 +97,7 @@ function Auth({register}) {
   return (
     <>
     <Header/>
-    <div className='d-flex justify-content-center align-items-center mb-5'>
+    <div className='d-flex justify-content-center align-items-center ' style={{marginBottom:'10rem'}}>
       <div className='w-80 container'>
         <h3 className='btn btn-light mt-3 my-3'><Link to={'/'} style={{textDecoration:'none', fontSize:'23px'}}><i class="fa-solid fa-arrow-left"></i> Home</Link></h3>
         <div className="card shadow p-4 bg-light">
