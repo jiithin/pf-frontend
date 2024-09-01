@@ -129,7 +129,7 @@ function Home() {
 
 
     <div className="all-projects mt-5">
-      <h1 className='text-primary fw-bolder text-center'>Explore Your Projects</h1>
+      <h1 className='text-primary fw-bolder text-center' style={{marginBottom:'5rem'}}>Explore Your Projects</h1>
 
       <Fade direction='left'>
            <Row className='mt-3'>
