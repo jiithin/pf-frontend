@@ -154,7 +154,7 @@ function Home() {
       </Fade>
   
       
-      <div style={{textAlign:'center', paddingBottom:'50px'}}>
+      <div style={{textAlign:'center', paddingBottom:'50px', marginBottom:'15vh'}}>
         <p className='d-flex justify-content-center mt-5 btn ' onClick={handleProjectsPage}>View More Projects</p>
       </div>
 
