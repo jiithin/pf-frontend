@@ -15,7 +15,7 @@ import { loginAPI, registerAPI } from '../services/allAPI';
 
 
 import { TokenAuthenticationResponsecontext } from '../ContextApi/TokenAuth';
-
+import { Fade } from 'react-awesome-reveal';
 
 function Auth({register}) {
 
@@ -108,7 +108,8 @@ function Auth({register}) {
 
             <div className="col-lg-6">
               <div className="d-flex align-items-center flex-coloumn">
-              
+
+                <Fade direction='up'>
                 <Form>
                 <h2 className='fw-bold text-dark mt-2'><i class="fa-solid fa-diagram-project"></i> Project Fair</h2>
 
@@ -155,7 +156,7 @@ function Auth({register}) {
                 
             
                 </Form>
-               
+                </Fade>
               </div>
 
             </div>
