@@ -3,7 +3,7 @@ import Header from '../Components/Header'
 import ProjectCard from '../Components/ProjectCard'
 import { Row,Col } from 'react-bootstrap'
 import { getAllUserProjectAPI } from '../services/allAPI'
-
+import { Fade } from 'react-awesome-reveal'
 
 
 
@@ -42,6 +42,7 @@ useEffect (()=>{
   return (
     <>
     <Header insideprojects/>
+     <Fade direction='up'>
     <div className='projects'>
       <h1 className='p-4' style={{textAlign:'center'}}>All Projects</h1>
       <div className="d-flex justify-content-center align-items-center">
@@ -66,6 +67,7 @@ useEffect (()=>{
         
       </Row>
     </div>
+     </Fade>
     </>
     
   )
