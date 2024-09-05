@@ -3,7 +3,7 @@ import{Row,Col} from 'react-bootstrap'
 import Header from '../Components/Header'
 import Myprojects from '../Components/Myprojects'
 import Profile from '../Components/Profile'
-
+import { Fade } from 'react-awesome-reveal';
 
 
 function Dashboard() {
@@ -19,6 +19,7 @@ function Dashboard() {
   return (
     <div>
       <Header insideDashBoard/>
+      <Fade direction='up'>
       <Row style={{marginBottom:'35vh'}}>
         <h2 className='mt-4 mx-5'>Welcome <span className='text-success fw-bolder'> {userName}</span></h2>
 
@@ -32,6 +33,7 @@ function Dashboard() {
         <Profile/>
         </Col>
       </Row>
+        </Fade>
     </div>
   )
 }
